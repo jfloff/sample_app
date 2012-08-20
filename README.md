@@ -4,11 +4,18 @@ This is the sample application for
 [*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/)
 by [Michael Hartl](http://michaelhartl.com/).
 
-## Notes
+You can view this application heroku deploymente [*here*](https://empty-day-4404.herokuapp.com)
+
+## My Notes
+
+### Rake
 
 *	Reset database
 
 		$ bundle exec rake db:reset
+
+
+### Git
 
 *	Reset to HEAD
 
@@ -20,3 +27,7 @@ by [Michael Hartl](http://michaelhartl.com/).
 
 		$ git checkout -b <new-branch> <existing-branch>
 
+
+### Rails
+
+* `<%= render @users %>` automatically renders each of the users in the @users variable using the _\_user.html.erb_ partial. 
