@@ -15,3 +15,8 @@ by [Michael Hartl](http://michaelhartl.com/).
 		$ git co master
 		$ git reset --hard master
 		$ git branch -D <branch>
+
+*	Create a branch from another branch
+
+		$ git checkout -b <new-branch> <existing-branch>
+
