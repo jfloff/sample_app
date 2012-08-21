@@ -31,6 +31,14 @@ describe "Static pages" do
           page.should have_selector("li##{item.id}", text: item.content)
         end
       end
+
+      it { should have_selector 'span', text: "#{user.feed.count} microposts" }
+
+      describe "single micropost" do
+        before { user.feed.pop }
+          
+        it { should have_selector 'span', text: "#{user.feed.count} micropost" }
+      end
     end
   end
 
