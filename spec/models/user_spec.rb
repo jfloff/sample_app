@@ -167,4 +167,19 @@ describe User do
       its(:feed) { should_not include(unfollowed_post) }
     end
   end
+
+  describe "relationship associations" do
+
+    before { @user.save }
+    let(:followed) { FactoryGirl.create(:user) }
+    let(:relationship) { @user.relationships.build(followed_id: followed.id) }
+
+    it "should destroy associated microposts" do
+      relationships = @user.relationships
+      @user.destroy
+      relationships.each do |relationship|
+        Relationship.find_by_id(relationship.id).should be_nil
+      end
+    end
+  end
 end
