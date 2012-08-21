@@ -206,6 +206,11 @@ input, textarea, select, .uneditable-input {
   float: left;
   margin-right: 10px;
 }
+
+#micropost_char_count{
+  display: inline;
+}
+
 aside {
   textarea {
     height: 100px;
