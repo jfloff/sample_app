@@ -8,6 +8,10 @@ You can view this application Heroku deployment [*here*](https://empty-day-4404.
 
 ## My Notes
 
+### GenPop
+
+* **Ajax**: allows web pages to send requests asynchronously to the server without leaving the page. Ajax = _ Asynchronous JavaScript and XML _
+
 ### Rake
 
 *	Reset database
