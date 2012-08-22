@@ -4,7 +4,7 @@ This is the sample application for
 [*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/)
 by [Michael Hartl](http://michaelhartl.com/).
 
-You can view this application heroku deploymente [*here*](https://empty-day-4404.herokuapp.com)
+You can view this application Heroku deployment [*here*](https://empty-day-4404.herokuapp.com)
 
 ## My Notes
 
@@ -26,6 +26,17 @@ You can view this application heroku deploymente [*here*](https://empty-day-4404
 *	Create a branch from another branch
 
 		$ git checkout -b <new-branch> <existing-branch>
+
+### Ruby
+
+* What the fuck is ||= ??
+
+		>> @user
+		=> nil
+		>> @user = @user || "the user"
+		=> "the user"
+		>> @user = @user || "another user"
+		=> "the user"
 
 
 ### Rails
