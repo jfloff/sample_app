@@ -31,6 +31,11 @@ You can view this application Heroku deployment [*here*](https://empty-day-4404.
 
 		$ git checkout -b <new-branch> <existing-branch>
 
+*	Change the last local commit message
+
+		$ git commit --amend -m "New commit message"
+
+
 ### Ruby
 
 * What the fuck is ||= ??
